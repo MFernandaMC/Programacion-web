@@ -1,0 +1,37 @@
+html{
+    padding: 0;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articleConteiner{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+.fondo1{
+    background: url(.vscode/assets/fondo1.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+.fondo2{
+    background: url(.vscode/assets/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+
+}
+.fondo3{
+    background: url(.vscode/assets/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+
+}
