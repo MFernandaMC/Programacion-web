@@ -1,0 +1,43 @@
+    html{
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+ .articleContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+ }
+    .imagen1{
+      
+        background: url(./imagenes/descarga.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        back
+     
+    }
+
+
+    .imagen2{
+        background: url(./imagenes/images.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+    .imagen3{
+        background: url(./imagenes/título.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+.texContainer{
+        color:white;
+        font-size: 10vw;
+    }
