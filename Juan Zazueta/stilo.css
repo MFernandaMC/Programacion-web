@@ -12,12 +12,14 @@ body{
     height: 100vh;
     width: 100%;
     background-color: aqua;
+    
 }
 .fondo1{
     background: url(.vscode/assets/fondo1.jpg);
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;
+
 }
 .fondo2{
     background: url(.vscode/assets/fondo2.jpg);
@@ -34,4 +36,24 @@ body{
     background-attachment: fixed;
    
 
+}
+.textContainer{
+    color: rgb(255, 255, 255);
+   font-size: 12vw;
+   font-weight: bold;
+   width: 96%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 2%;
+}
+.textContent{
+    width: 100%;
+    text-align: center;
+    
+}
+.textImageBackground{
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-transform: uppercase;
 }
