@@ -1,0 +1,128 @@
+.root {
+    --primary-color: #364d6d;
+    --secondary-color-numero1: #bfc0c0;
+    --secondary-color-numero2: #ffffff;
+    --secondary-color-numero3: #fd4f49;
+    --secondary-color-numero4: #034160;
+    --secondary-color-numero5: #017e7f;
+    --text-color-1: black;
+    --text-color-2: white;
+}
+
+/* barra de navegacion */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: var(--primary-color);
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li>a {
+    text-decoration: none;
+    color: var(--text-color-2);
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: var(--secondary-color-numero2);
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+
+.articleContainer {
+    height: 40vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(177, 73, 158); */
+    margin-top: 0;
+    /*margen de arriba a abajo*/
+    text-align: center;
+}
+
+.textfieldCont {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.textfieldCont>label {
+    float: left;
+    margin-top: 10px;
+}
+
+.textfieldCont>input {
+    width: 90%;
+    height: 50px;
+
+}
+
+.btnCont {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.btnCont>button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 25vh;
+}
+
+.Titulo {
+    color: black;
+    font-family: cursive;
+    text-align: center;
+}
+
+body {
+    background-color: #182128;
+}
+
+.img {
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+.btn-login {
+    margin-top: -10%;
+    /* margin-left: 45%;  */
+    text-align: center;
+}

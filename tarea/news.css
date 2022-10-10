@@ -1,0 +1,164 @@
+body {
+    background: url(./fondos/news12.jpeg);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+Estos es la paleta de colores que se usará en todo el código
+*/
+.root {
+    --primary-color: #364d6d;
+    --secondary-color-numero1: #bfc0c0;
+    --secondary-color-numero2: #ffffff;
+    --secondary-color-numero3: #fd4f49;
+    --secondary-color-numero4: #034160;
+    --secondary-color-numero5: #017e7f;
+    --text-color-1: black;
+    --text-color-2: white;
+}
+
+/* Este es el diseño del div principal */
+.main-container {
+    width: 1280px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 10px;
+}
+
+/* Esta clase indica el cuando debera de medir horizontalmente cada etiqueta*/
+.main {
+    width: 100%;
+}
+/* Esta clase es la parte de la primera mitad de el main*/
+.card {
+    background-color: var(--primary-color);
+    box-shadow: 0 1px 5px black;
+    border-radius: 10px;
+    color: var(--text-color-2);
+}
+/* Esta clase es la que corresponde a la parte del texto de cada etiqueta*/
+.card .info {
+    padding: 20px;
+}
+
+.card .tittle {
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+.card .description {
+    padding: 10px 0;
+}
+/* Esta clase es la que corresponde a cada imagen de cada etiqueta*/
+.card .image {
+    background-color: #364d6d;
+    height: 300px;
+    overflow: hidden;
+    border-radius: inherit;
+
+}
+/* Esta clase es la que corresponde a la mitad de abaj de el main*/
+.articles {
+    contain: layout inline-size;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.top {
+    contain: layout inline-size;
+    display: flex;
+    flex-direction: column;
+}
+
+.articleContainer {
+    height: 100%;
+    width: 100%;
+    padding: 5px 1px;
+}
+
+.textContainer {
+    font-size: 10vw;
+    font-weight: bold;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: #bfc0c0;
+    border: 7px groove;
+}
+
+.textContent {
+    width: 100%;
+    text-align: center;
+}
+
+.textEfecto {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #fcedd8,
+        3px 3px 0px #bad9dd,
+        8px 8px 0px #46b59b,
+        12px 12px 0px #017e7f,
+        18px 18px 0px #364d6d,
+        25px 25px 0px transparent,
+        30px 30px 0px transparent,
+        35px 35px 0px transparent,
+        40px 40px 0px transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: #364d6d;
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}

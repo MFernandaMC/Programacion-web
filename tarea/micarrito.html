@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi carrito</title>
+    <link rel="icon" type="image/x-icon" href="./assets/carrito.png">
+    <link rel="stylesheet" href="./micarrito.css">
+</head>
+
+<body class="root fondo">
+    <!-- barra de navegacion -->
+    <header>
+        <div class="brand"><a href="index.html">RepairTec!</a></div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="citas.html">Cita</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="news.html">Novedades </a></li>
+                <li><a href="acerca_de.html">Acerca de</a></li>
+                <li><a href="micarrito.html">Mi carrito </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- titulo de la seccion -->
+    <div class="articleContainer ">
+        <div class="textContainer ">
+            <span class="textContent textEfecto">Mi carrito</span>
+        </div>
+    </div>
+    <!-- formulario -->
+    <form>
+        <div class="articleContainer2">
+            <div class="textfielCont2">
+                <label for="inputNombre">Nombre completo:</label>
+                <input name="usrNombre" id="inputNombre" type="text" autocomplete="off">
+
+                <label for="inputApellido">Dirección:</label>
+                <input name="usrApellido" id="inputApellido" type="text" autocomplete="off">
+
+                <!-- onkeypress toma el evento cuando el usuario presiona una tecla (del teclado).
+                event.charCode captura el código ascii de la tecla presionada.
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" esta linea permite solo 
+                escribir numeros del 0-9 -->
+                <label for="inputTelefono">Télefono:</label>
+                <input name="usrTelefono" id="inputTelefono" type="text" maxlength="10"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" autocomplete="off">
+
+                <label for="inputEnvio">Metodo de envio:</label>
+                <div class="textfielCont3">
+                    <input type="radio" id="estandar" name="inputEnvio" value="estandar">
+                    <label for="html">Envio estándar</label><br>
+                    <input type="radio" id="express" name="inputEnvio" value="express">
+                    <label for="css">Envio express</label><br>
+                </div>
+
+                <label for="inputPago">Forma de pago:</label>
+                <div class="textfielCont3">
+                    <input type="radio" id="tarjeta" name="inputPago" value="tarjeta">
+                    <label for="html">Tarjeta de credito/Débito</label><br>
+                    <input type="radio" id="oxxo" name="inputPago" value="oxxo">
+                    <label for="css">OXXO</label><br>
+                </div>
+
+                <label for="inputArticulos">Articulos en el carrito:</label>
+                <input name="micarritoArticulos" id="inputArticulos" type="text" readonly onmousedown="return false;">
+
+                <label for="inputTotal">Total:</label>
+                <input name="micarritoTotal" id="inputTotal" type="text" readonly onmousedown="return false;">
+
+                <div class="btnCont">
+                    <button id="btn">Finalizar el pedido</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- conexion con js -->
+    <script src="micarrito.js"></script>
+</body>
+
+</html>

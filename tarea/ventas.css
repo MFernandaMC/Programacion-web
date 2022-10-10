@@ -1,0 +1,234 @@
+.root {
+    --primary-color: #364d6d;
+    --secondary-color-numero1: #bfc0c0;
+    --secondary-color-numero2: #ffffff;
+    --secondary-color-numero3: #fd4f49;
+    --secondary-color-numero4: #034160;
+    --secondary-color-numero5: #017e7f;
+    --text-color-1: black;
+    --text-color-2: white;
+}
+
+.articleContainer {
+    height: 100%;
+    width: 100%;
+    padding: 5px 1px;
+}
+
+.textContainer {
+    font-size: 10vw;
+    font-weight: bold;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--secondary-color-numero1);
+    border: 7px groove;
+
+}
+
+.textContent {
+    width: 100%;
+    text-align: center;
+}
+
+/* codigo del efecto */
+.textEfecto {
+    color: var(--text-color-2);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #fcedd8,
+        3px 3px 0px #bad9dd,
+        8px 8px 0px #46b59b,
+        12px 12px 0px #017e7f,
+        18px 18px 0px var(--primary-color),
+        25px 25px 0px transparent,
+        30px 30px 0px transparent,
+        35px 35px 0px transparent,
+        40px 40px 0px transparent;
+}
+
+
+
+
+
+.articleContainer1 {
+    height: 100px;
+    width: 100%;
+    padding: 5px 1px;
+    margin-top: 7%;
+}
+
+.textContainer1 {
+    font-size: 3vw;
+    font-weight: bold;
+    width: 50%;
+    height: 8%;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color-2);
+
+}
+
+.textContent1 {
+    width: 100%;
+    text-align: center;
+
+}
+
+/* codigo del efecto */
+.textEfecto1 {
+    color: var(--text-color-2);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #fcedd8,
+        2px 2px 0px #bad9dd,
+        6px 6px 0px #46b59b,
+        8px 8px 0px #017e7f,
+        12px 12px 0px var(--primary-color),
+        18px 18px 0px transparent,
+        20px 20px 0px transparent,
+        20px 20px 0px transparent,
+        20px 20px 0px transparent;
+}
+
+/* .container .box {
+    display : flex;
+    flex-direction : row;
+    
+}
+
+
+.container .box .box-cell.box1 {
+    background:green;
+    color:white;
+    text-align:justify;
+}.container .box .box-cell.box2 {
+    background:lightgreen;
+    text-align:justify
+} */
+
+.fondo {
+    background-image: url(./fondo.jpg);
+    margin: 0%;
+
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    padding: 5px 1px;
+    display: flex;
+    margin-right: 40px;
+}
+
+.contenedor1 {
+    height: 55vh;
+    width: 20%;
+    margin-left: 4%;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color-numero1);
+    margin-top: 40px;
+    border: 7px dotted var(--primary-color);
+    padding: 5px 1px;
+}
+
+.contenedor2 {
+    height: 55vh;
+    width: 20%;
+    margin-left: 2%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color-numero1);
+    margin-top: 40px;
+    border: 7px dotted var(--primary-color);
+    padding: 5px 1px;
+
+}
+
+.textCont {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.textcont1 {
+    margin-left: 15%;
+}
+
+.textcont2 {
+    margin-left: 20%;
+}
+
+.imagen1 {
+    margin-right: 10%;
+    margin-left: 12%;
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* barra de navegacion */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: var(--primary-color);
+
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li>a {
+    text-decoration: none;
+    color: var(--text-color-2);
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: var(--secondary-color-numero2);
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="icon" type="image/x-icon" href="./assets/agenda.png">
+    <link rel="stylesheet" href="citas.css">
+</head>
+
+<body class="root fondo">
+    <!-- barra de navegacion -->
+    <header>
+        <div class="brand"><a href="index.html">RepairTec!</a></div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="citas.html">Cita</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="news.html">Novedades </a></li>
+                <li><a href="acerca_de.html">Acerca de</a></li>
+                <li><a href="micarrito.html">Mi carrito </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- titulo de la seccion -->
+    <div class="articleContainer ">
+        <div class="textContainer ">
+            <span class="textContent textEfecto">Citas</span>
+        </div>
+    </div>
+
+    <!-- formulario -->
+    <form>
+        <div class="articleContainer2">
+            <div class="textfielCont2">
+                <h1 class="animated-shadow">Llena el siguiente formulario</h1>
+                <label for="inputNombre">Nombre(s):</label>
+                <input name="usrNombre" id="inputNombre" type="text" autocomplete="off">
+
+                <label for="inputApellido">Apellidos:</label>
+                <input name="usrApellido" id="inputApellido" type="text" autocomplete="off">
+
+                <label for="inputEmail">Correo electronico:</label>
+                <input placeholder="direccion@gmail.com" name="usrEmail" id="inputEmail" type="email" autocomplete="on">
+
+                <!-- onkeypress toma el evento cuando el usuario presiona una tecla (del teclado).
+                event.charCode captura el código ascii de la tecla presionada.
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" esta linea permite solo 
+                escribir numeros del 0-9 -->
+                <label for="inputTelefono">Télefono:</label>
+                <input name="usrTelefono" id="inputTelefono" type="text" maxlength="10"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" autocomplete="off">
+
+                <label for="inputAgenda">Fecha y hora:</label>
+                <input name="usrAgenda" id="inputAgenda" type="datetime-local">
+
+                <label for="inputDescripcion">Seleccione un servicio:</label>
+                <div class="textfielCont3">
+                    <input type="radio" id="reparacion" name="inputDescripcion" value="reparacion">
+                    <label for="html">Reparación</label><br>
+                    <input type="radio" id="venta" name="inputDescripcion" value="venta">
+                    <label for="css">Compra de un articulo</label><br>
+                </div>
+
+                <div class="btnCont">
+                    <button id="btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- contenedor para imagen del logo -->
+    <div class="articleContainer3"></div>
+    <!-- conexion con js -->
+    <script src="citas.js"></script>
+</body>
+
+</html>
