@@ -1,0 +1,278 @@
+html{
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.articleContainer{
+    height: 100vh;
+    width: 100%;
+
+
+}
+.fondo1{
+    background: url("./assets/cambio_Pantalas.jpg");
+    background-repeat: no-repeat;/*no repite la imagen*/
+    background-size: cover;/*es para acomodar la imagen al largo correcto de toda la pantalla*/
+    background-attachment: fixed; /* es para que las imagenes no se muevan y la posicion de la pagina si*/
+}
+.fondo2{
+    background: url("./assets/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondo3{
+    background: url("./assets/13.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+.textContainer{
+
+    font-size: 15vw;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+.textContent{
+    width: 95%;
+    text-align: center;
+    border: 3px;
+}
+.textImageBackground{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase; /*Pone todo el texto mayuscula */
+}
+
+
+
+.diseño{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+
+}
+.margendeltexto{
+    /* height: 10%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%; */
+        height: 30vh;
+        width: 100%;
+
+}
+.margenImagen{
+    background-color: #182128;
+        margin-right: 5%;
+        margin-left: 5%;
+}
+.tamañodelmargen{
+    height: 40%;
+    width: 100%;
+    
+}
+
+
+.textoCuadrado{
+    font-size: 9vw;
+    font-weight: bold;
+    width: 95%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: transparent;
+ 
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: #182128;
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.waviy {
+  position: relative;
+  
+  font-size: 90px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s reverse;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.waviy{
+    padding: 22%;
+    
+}
+
+
+/* :root{ 
+    --primary-color: ;
+    --secundary-color-1: ;
+    --secundary-color-2: ;
+    --secundary-color-3: ;
+    --secundary-color-4: ;
+    --text-color-1: ;
+
+}*/
+
+h1{
+    text-align: center;
+
+}
+h3{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+.mapa{
+    margin-left: 40%;
+    margin-right: 19%;
+    border: 5px solid black;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+#hashLink {
+	display: none;
+}
+#hashLink:target {
+	display: block;
+}
+.float-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999999;
+}
+.float-nav:hover {
+cursor:pointer;
+}
+.float-nav-2 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.float-nav-2:hover {
+cursor:pointer;
+}
+.main-nav-2 {
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 7px;
+  right: 0px;
+  width: 120px;
+  margin-bottom:40px;
+}
+.main-nav-2.active {
+  display: block;
+  opacity: 1;
+}
+.main-nav-2 > ul {
+  width: 100%;
+  display: block;
+  list-style: none;
+	z-index:10;
+}
+.main-nav-2 > ul > li {
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav-2 > ul > li > a {
+  text-decoration: none;
+  display: block;
+  font-weight: 200;
+  padding: 18px 80px 18px 18px;
+  color: black;
+}
+.main-nav-2 > ul > li > a:hover {
+  font-weight: 400;
+}
